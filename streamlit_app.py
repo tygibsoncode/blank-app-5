@@ -13,3 +13,10 @@ if basic_plots:
     )
     st.dataframe(table)
     st.line_chart(table)
+    
+sliders = st.checkbox("Sliders")
+if sliders:
+    age = st.slider("How old are you?",18,120,20)
+    someRange = st.slider("Select a range",
+                          0.0, 200.0, (25., 50))
+    
