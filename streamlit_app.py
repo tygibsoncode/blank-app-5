@@ -22,3 +22,16 @@ if sliders:
     dentistAppointment = st.slider("Select a time",
                                    value=(time(10,30),
                                    time(12,30)))
+    
+st.divider()
+
+tab1,tab2,tab3 = st.tabs(["About Us","Mission","Contact Us"])
+with tab1:
+    st.write("We are CAP 4104 students at FIU.")
+    
+with tab2:
+    st.write("Our mission is to use HCI principles effectively.")
+    
+with tab3:
+    st.write("Office hours are Wednesday in INV1 455 at 2pm.")
+    
